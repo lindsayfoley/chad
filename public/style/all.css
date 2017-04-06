@@ -1,0 +1,40 @@
+/* Base styles */
+body *:not(header) { font-family:'PT Sans', sans-serif; }
+h1, h2, h3, h4, h5 { color:#2F4E6F; }
+
+/* Header */
+header { border-top:20px solid black; font-family:'Roboto Condensed', sans-serif; background:url("/images/eye-equipment.png") repeat scroll 0 0; text-align:center; }
+#main-menu { background-color:#FBF7F4; opacity:0.8; }
+#main-menu div:last-of-type { padding-top:5px; }
+#logo h3 { text-transform:uppercase; color:black; font-weight:bold; letter-spacing:3px; color:black; }
+nav li { font-size:15px; font-weight:bold;  position:relative; text-transform:uppercase; padding:0 30px; letter-spacing:1px; }
+nav li a { color:#2c729b; border-bottom:3px solid #FBF7F4; }
+nav a:hover { border-color:#2C729B; }
+#intro h3 { color:white; max-width:900px; margin:0 auto; }
+
+/* Main content */
+section a { color:#2C729B; }
+section a:hover { color:#368ec1; }
+main { padding:40px 0; }
+section hr { border-bottom-color:#dfdfdf; }
+section h4 { padding-bottom:40px; margin:0; }
+section p { color:#7a7a7a; }
+
+/* Footer */
+footer { font-size:13px; padding:30px 0; background:#F6F6F8; }
+footer .text-left { color:#2C729B; border-bottom:1px solid #2C729B; }
+footer .text-right, footer .text-right a { color:#7a7a7a; }
+
+
+/* Desktop */
+@media all and (min-width: 768px) {
+	#main-menu { padding:50px 0 80px 0; }
+	header > div:last-of-type { padding:200px 0; }
+	nav li:not(:first-child):after { content:'|'; color:#9a9898; position:absolute; top:5px; left:-5px; }
+}
+
+/* Mobile */
+@media all and (max-width: 415px) {
+	article h5 { margin-top:10px; }
+	footer * { text-align:center!important; }
+}

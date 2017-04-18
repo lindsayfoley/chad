@@ -8,30 +8,9 @@
 	<?php include('structure/icons.php'); ?>
   </head>
   
-  <body>
+  <body id="homepage">
 	  
-	<header>
-		<div class="top-bar" id="main-menu">
-			<div class="row">
-				<div id="logo" class="large-4 medium-4 column">
-					<h3>Chad Rostron</h3>
-				</div>
-				<div class="large-7 medium-8 column">
-				    <nav class="menu-centered">
-						<ul class="vertical medium-horizontal menu">
-						  <li><a href="experience.php">Experience</a></li>
-						  <li><a href="publications.php">Publications</a></li>
-						  <li><a href="about.php">About</a></li>
-						  <li><a href="contact.php">Contact</a></li>
-						</ul>
-				    </nav>
-				</div>
-			</div>
-	    </div>
-		<div id="intro" class="row">
-			<h3 class="column">A Consultant Ophthalmologist dealing with diseases, injuries and operations involving the eyes such as Glaucoma, Diabetic Retinopathy and Macular Degeneration.</h3>
-		</div>	
-	</header>
+	<?php include('structure/header.php'); ?>
 	
 	<section>
 		<main class="row">
@@ -52,12 +31,12 @@
 					<hr>
 					<div class="row">
 						<div class="large-6 column">
-							<img src="images/visual-field.jpg" alt="Visual field diagram">
+							<img src="images/files.jpg" alt="Patient files">
 						</div>
 						<div class="large-6 column">
 							<h5><a href="experience.php">London Consulting &amp; Expertise</a></h5>
 							<p>Mr Rostron is a consultant eye surgeon specialising in corneal and cataract surgery with a practice based in Harley Street, London.</p>
-							<p>He was previously Medical Director of Accuvision Laser Eye Centres and also Consultant Ophthalmologist at Moorfields Eye Department at St George's Hospital, and Honorary Senior Lecturer in Ophthalmology at St George's, University of London.</p>
+							<p>He was previously Medical Director of Accuvision Laser Eye Centres and Consultant Ophthalmologist at Moorfields Eye Department at St George's Hospital.</p>
 							<a class="button small" href="experience.php">Read More</a>
 						</div>
 					</div>

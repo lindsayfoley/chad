@@ -4,25 +4,26 @@ body *:not(header) { font-family:'PT Sans', sans-serif; }
 h1, h2, h3, h4, h5 { color:#2F4E6F; }
 
 /* Header */
-header { border-top:20px solid black; font-family:'Roboto Condensed', sans-serif; background:url("/images/eye-equipment.png") no-repeat scroll 0 0; background-size:cover; text-align:center; }
+header { border-top:20px solid black; font-family:'Roboto Condensed', sans-serif; text-align:center; }
 #main-menu { background-color:#FBF7F4; opacity:0.8; }
 #main-menu div { padding:0; }
-#logo h3 { text-transform:uppercase; color:black; font-weight:bold; letter-spacing:3px; color:black; }
+#logo h3 { text-transform:uppercase; color:black; font-weight:bold; letter-spacing:3px; margin:0; line-height:normal; color:black; }
 nav li { font-size:15px; font-weight:bold;  position:relative; text-transform:uppercase; padding:0 20px; letter-spacing:1px; }
-nav li a { color:#2c729b; border-bottom:3px solid #FBF7F4; }
-#intro h3 { color:white; max-width:900px; margin:0 auto; }
+nav li a { color:#448EB9; border-bottom:3px solid transparent; }
+#intro h3 { color:white; max-width:900px; margin:0 auto; text-shadow:0 1px 1px #CCB299; }
 
 /* Main content */
 section a { color:#2C729B; }
-section a:hover { color:#368ec1; }
-main { padding:40px 0; }
+section a:hover { color:#206e9b; }
 article img { max-width:637px; width:100%; display:block; margin:0 auto; }
+article h5 + p { margin-top:0; }
+article p + .button { margin-top:5px; }
 section hr { border-bottom-color:#dfdfdf; }
-section h4 { padding-bottom:40px; margin:0; }
+section h4 { margin:0; }
 section p { color:#7a7a7a; }
 
 /* Footer */
-footer { font-size:13px; padding:30px 0; background:#F6F6F8; }
+footer { font-size:13px; padding:30px 0; background:#F1F1F3; }
 footer div > a { color:#2C729B; border-bottom:1px solid #2C729B; }
 footer p { margin:0; }
 footer p, footer a { color:#7a7a7a; }
@@ -37,23 +38,34 @@ footer p, footer a { color:#7a7a7a; }
 @media all and (max-width: 890px) { header #logo, header #logo + div { width:100%; } }
 
 @media all and (min-width: 768px) {
-	#main-menu { padding:50px 0; }
+	main { padding:40px 0; }
+	main > div { margin-top:40px; }
+	#main-menu { padding:30px 0; }
 	#intro { padding:170px 0; }
 	nav li:not(:first-child):after { content:'|'; color:#9a9898; position:absolute; top:5px; left:-5px; }
-	nav a:hover { border-color:#2C729B; }
+	nav a:hover { border-color:#2b94d1; }
 }
 
 /* Below tablet */
 @media all and (max-width: 767px) { 
+	main { padding:20px 0; }
+	main > div { margin-top:20px; }
 	#main-menu { padding:5% 0; }
 	#intro { padding:13% 0; }	
 }
 
 /* Medium and up */
-@media all and (min-width: 640px) { footer p { text-align:right; } }
+@media all and (min-width: 640px) {
+	header { background:url("/images/binoculars.jpg") no-repeat; background-position:center center; background-size:cover; } 
+	footer p { text-align:right; } 
+}
 
 /* Mobile */
 @media all and (max-width: 639px) {
+	div > nav { display:none; }
+	#logo:before { content:'X'; position:absolute; left:20px; top;0; font-weight:bold; }	
+	nav { margin-top:10px; }
+	#intro { background:url("/images/binoculars.jpg") no-repeat; background-position:center center; background-size:cover; }
 	footer * { text-align:center; }
 	footer div:first-of-type { padding-bottom:15px;	 }
 }

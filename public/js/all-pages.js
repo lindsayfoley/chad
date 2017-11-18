@@ -1,30 +1,12 @@
-var ResponsiveHelper = {
+var toggleHamburgerNav = function() {
 	
-	windowWidth : function() {	
-		return $(window).width();
-	},
-	
-	mobileWidth: 639,
+	$('.hamburger-container').click(function(e){
+		$('nav').slideToggle();
+		e.stopPropagation();
+	});
+};
 
-	toggleNavOnClick: function() {
-		
-		$('#main-menu').click(function(){
-			$('nav').slideToggle();
-		});
-	},
-	
-	activateMobileMenu: function(){
-		
-		if(ResponsiveHelper.windowWidth() <= ResponsiveHelper.mobileWidth) {
-			ResponsiveHelper.toggleNavOnClick();
-		}
-	}
-}
 
 $(document).ready(function() {
-	ResponsiveHelper.activateMobileMenu();
-});
-
-$(window).resize(function() {
-	ResponsiveHelper.activateMobileMenu();
+	toggleHamburgerNav();
 });
